@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HeaderModule } from "./shared/header/header.module";
+import { BannerModule } from './shared/banner/banner.module';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { HeaderModule } from "./shared/header/header.module";
         AppRoutingModule,
         BrowserAnimationsModule,
         MatSlideToggleModule,
-        HeaderModule
+        HeaderModule,
+        BannerModule
     ]
 })
 export class AppModule { }
