@@ -1,0 +1,14 @@
+@import '~@angular/material/theming';
+
+// Defina sua cor principal
+$custom-primary: mat-palette($mat-green, 500);
+
+// Crie um tema baseado no tema existente (por exemplo, Deep Purple Amber)
+$custom-theme: mat.define-light-theme((
+  color: (
+    primary: $custom-primary,
+  )
+));
+
+// Aplique o tema personalizado ao Angular Material
+@include mat.all-component-themes($custom-theme);
